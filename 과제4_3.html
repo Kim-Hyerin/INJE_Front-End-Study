@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>과제4_3</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>사번</td>
+            <td><input type="text" name="uid"></td>
+            <td>이름</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>나이</td>
+            <td><input type="text" name="age"></td>
+            <td>성별</td>
+            <td><label><input type="radio" name="gender" value="male">남</label><label><input type="radio" name="gender" value="female">여자</label></td>
+        </tr>
+        <tr>
+            <td>최종학력</td>
+            <td colspan="3">
+                <select name="edu">
+                    <option value="0" selected></option>
+                    <option value="mid">중학교 졸업이하</option>
+                    <option value="highat">고등학교 졸업예정</option>
+                    <option value="highgr">고등학교 졸업</option>
+                    <option value="univat">대학교 졸업예정</option>
+                    <option value="univgr">대학교 졸업</option>
+                    <option value="graduat">대학원 졸업예정</option>
+                    <option value="gradugr">대학원 졸업</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>취미</td>
+            <td colspan="3"><input type="checkbox" name="hobby" value="sports">Sports<input type="checkbox" name="hobby" value="books">Books<input type="checkbox" name="hobby" value="dance">Dance</td>
+        </tr>
+        <tr>
+            <td>자기소개</td>
+            <td colspan="3"><textarea rows="3" cols="50" name="self"></textarea> </td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" value="쿼리 전송"> <input type="reset" name="reset" value="원래대로">
+</body>
+</html>
